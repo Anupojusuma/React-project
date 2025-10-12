@@ -1,13 +1,29 @@
+:root {
+  --purple1: #EDDCD2;
+  --purple2: #C9ADA7;
+  --purple3: #9e7a99;
+  --purple4: #d6ccc2 ;
+  --purple5: #FAEDCD;
+  --purple6: #080808;
+  --purple7: #f3f3f3;
+  --border-radius: 20px;
+  --shadow: 0 6px 48px rgb(211, 207, 219);
+  font-family: 'Quicksand', 'Montserrat', Arial, sans-serif;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background: var(--purple7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--purple6);
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body.dark-mode {
+  background: #0e0e0f;
+  color: #eee;
+  --text-main: #fff;
+}
+* {
+  box-sizing: border-box;
 }
